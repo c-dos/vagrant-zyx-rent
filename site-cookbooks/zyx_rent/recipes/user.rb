@@ -1,16 +1,16 @@
 #
-# Cookbook Name:: zyx-rent
+# Cookbook Name:: zyx_rent
 # Recipe:: user
 #
 
-zyx-rent = node['zyx-rent']
+zyx_rent = node['zyx_rent']
 
 include_recipe "oh_my_zsh"
 
 # Config user env
 # vimrc
-template "#{zyx-rent['home']}/.vimrc" do
-  user zyx-rent['user']
+template "#{zyx_rent['home']}/.vimrc" do
+  user zyx_rent['user']
   source "vimrc.erb"
   mode 0644
 end
