@@ -12,5 +12,7 @@ git zyx_rent['repo_path'] do
   repository zyx_rent['repository']
   enable_submodules true
   action :checkout
+	user  zyx_rent['user']
+	group zyx_rent['user']
   timeout 1200
 end
