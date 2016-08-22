@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ['cookbooks', 'site-cookbooks']
-    chef.add_recipe('astdev')
+    chef.add_recipe('zyx-rent')
 
     chef.add_recipe('oh_my_zsh')
     chef.json = {
