@@ -35,7 +35,7 @@ Vagrant.configure("2") do |config|
         "users" => [
           :login   => 'vagrant',
           :theme   => 'gozilla',
-          :plugins => ['git']
+          :plugins => ['git', 'history-substring-search']
         ]
       }
     }
