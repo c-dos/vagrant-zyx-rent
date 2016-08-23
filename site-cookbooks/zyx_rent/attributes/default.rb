@@ -6,6 +6,7 @@
 
 # user
 default['zyx_rent']['user'] = "vagrant"
+default['zyx_rent']['home'] = "/home/#{default['zyx_rent']['user']}"
 
 # repository zyx_rent
 default['zyx_rent']['repository'] = "https://github.com/c-dos/zyx-rent.git"
