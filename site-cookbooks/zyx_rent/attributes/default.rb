@@ -16,7 +16,7 @@ default['zyx_rent']['branch'] = "master"
 
 if platform?("ubuntu", "debian")
   packages = %w{
-    aptitude
+    aptitude python3-pip python3 vim python3-virtualenv virtualenv
   }
 end
 default['zyx_rent']['packages'] = packages
