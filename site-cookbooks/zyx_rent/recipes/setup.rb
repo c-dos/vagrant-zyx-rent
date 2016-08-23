@@ -13,3 +13,6 @@ include_recipe "zyx_rent::packages"
 
 # User configs
 include_recipe "zyx_rent::user"
+
+# database
+include_recipe "zyx_rent::database_#{zyx_rent['database_adapter']}"
